@@ -20,5 +20,28 @@ $x_{t+1} = A_1x_t + ... + A_Kx_{t-K+1}$, t = K,K + 1,...\\
 \subsection{Population dynamics}
 
 \subsection{Epidemic dynamics}
+\textbullet \textbf{Susceptible:} These individuals can acquire the disease the next day. \newline
+\textbullet \textbf{Infected:} These individuals have the disease.
+\textbullet \textbf{Recovered/(immune) :} These individuals had the disease and survived,and now have immunity. \newline
+\textbullet \textbf{Deceased:} These individuals had the disease, and unfortunately died from it.
+
+Example: $x_{t} = [0.75, 0.10, 0.10, 0.05]$
+
+We can determine number of susceptible individuals for the next day, i.e., $x_{t+1}$
+
+$x_{t+1} = Mat(n x n)*x_{t}$
+
+\newline
+
+$x_{t+1} = Mat[n x n]*x_{t}$
+where Mat[n x n] is set of assumptions made by the model.
+
 \subsection{Motion of a mass}
+Linear dynamical systems can be used to describe motion of mechanical objects. The (scalar) position of the mass at time $\tau$ is given by
+$p(\tau )$.
+PDE for position:
+$m \frac{\partial^2 p}{\partial \tau^{2}} ( \tau ) =  -  \eta  \frac{\partial p}{\partial \tau} (\tau) +   f(\tau)$
+m > 0 is the mass, $f(\tau )$ is the external force acting on the mass at time $\tau$ ,and $ \eta > 0$ is the drag coefficient.
+
+
 \subsection{Supply chain dynamics}
